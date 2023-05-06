@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>
+            Face Recognition App
+        </title>
+        <link rel="stylesheet" href="style.css">
+        <script src="main.js"></script>
+    </head>
+    <body>
+        <div>
+            <center>
+
+                <h1><b>Face Recognition App</b></h1>
+                <br>
+                <br>
+                <h4 class="btn btn-sucess">This model is trained to identify the following member</h4>
+                <br>
+                <hr>
+                Anushri
+                <hr>
+                Arjeeth
+                <hr>
+                <br>
+                Webcam View :-
+                <br>
+                <div id="camera"></div>
+                <br>
+                <br>
+                <div id="result"></div>
+
+                <br>
+                <br>
+
+                <button onclick="take_snapshot();" class="btn btn-info">Capture image</button>
+                <br>
+                <br>
+                <button onclick="check();" class="btn btn-success">identify image</button>
+                <br>
+                <br>
+                <p style="font-size:22px;">person:<span id="result_object_name"></span></p>
+                <p style="font-size:22px;">accuracy:<span id="result_object_accuracy"></span></p>
+
+            </center>
+        </div>
+    </body>
+</html>
